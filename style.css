@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --bg-color: #24053e;
+  --text-color: #fff;
+  --secondary-color: #43ffa1;
+  --card-color: #dedede;
+}
+
+.navbar {
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-left: 5rem;
+}
+
+.navbar a {
+  color: var(--text-color);
+  border-bottom: 0.1rem solid var(--secondary-color);
+  font-weight: 600;
+  margin-right: 2rem;
+}
+
+/* title section */
+
+.title {
+  background-color: var(--bg-color);
+  min-height: 25rem;
+  border-radius: 0% 0% 15% 15% / 0% 0% 10% 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+}
+
+.main-title {
+  color: var(--text-color);
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.tail {
+  font-family: "Times New Roman", Times, serif;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.title a {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 650;
+  color: var(--bg-color);
+  background-color: var(--secondary-color);
+  transition: all 0.3s linear;
+  border-radius: 3px;
+}
+
+.title a:hover {
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+  border: 0.5px solid var(--secondary-color);
+}
+
+.green-card {
+  z-index: 5;
+  position: absolute;
+  margin-top: 10rem;
+  width: 10rem;
+  height: 20rem;
+  background: linear-gradient(var(--secondary-color), var(--bg-color));
+  rotate: 40deg;
+  border-radius: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotateZ(5deg);
+
+  border: 5px solid black;
+  box-shadow: 4px 3px 3px 3px rgb(57, 57, 57); /* Gölge */
+}
+
+.top {
+  margin-top: 2rem;
+  background-color: #d9d9d9;
+  width: 80%;
+  height: 20%;
+  border-radius: 0.1rem;
+}
+.bottom {
+  background-color: #d9d9d9;
+  margin-top: 1rem;
+  width: 80%;
+  height: 50%;
+  border-radius: 0.1rem;
+}
+
+/* cards */
+
+.cards {
+  background-color: var(--card-color);
+  min-height: 25rem;
+  border-radius: 0% 0% 15% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  margin-top: -4rem;
+  padding-bottom: 6rem;
+}
+
+.card {
+  margin-top: 12rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.card h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  margin-bottom: 1.7rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.card p {
+  font-size: 0.7rem;
+}
+
+.contents {
+  margin-top: 20rem;
+  width: 100%;
+  height: 25rem;
+  padding: 3rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  height: 20em;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 15rem;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.text-content {
+  width: 40rem;
+  background-color: var(--bg-color);
+  height: 13rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+}
+
+.text-content h2 {
+  color: var(--text-color);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+.text-content p {
+  font-size: small;
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+
+.text-content a {
+  margin-top: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+  font-weight: 650;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    display: none;
+  }
+}
+
+/* footer */
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 50rem;
+  background-color: rgba(243, 243, 243, 0.811);
+  padding: 2rem;
+  min-height: 15rem;
+}
+
+.footer h1 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: var(--bg-color);
+}
+.footer h1 span {
+  font-weight: 400;
+}
+
+.icons ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.icons ul li {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+.icons a {
+  color: rgb(83, 83, 83);
+}
