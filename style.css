@@ -41,7 +41,7 @@
 .title {
   background-color: var(--bg-color);
   min-height: 25rem;
-  border-radius: 0% 0% 15% 15% / 0% 0% 10% 10%;
+  border-radius: 0% 0% 80% 80% / 0% 0% 10% 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -116,7 +116,7 @@
 .cards {
   background-color: var(--card-color);
   min-height: 25rem;
-  border-radius: 0% 0% 15% 15%;
+  border-radius: 0% 0% 80% 80% / 0% 0% 10% 10%;
   display: flex;
   align-items: center;
   justify-content: center;
